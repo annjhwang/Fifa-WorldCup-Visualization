@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171 - HW 5</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Ann Josephine Hwang</h1>
+		<h3>CS171 HW5</h3>
+	</header>
+
+	<div class="container">
+
+		<h1>FIFA World Cup<sup>TM</sup></h1>
+		<h2>All Time Statistics</h2>
+		<div> Sort by:</div>
+		<div class = "select-box"></div>
+		<div> Lower bound year:</div>
+		<div class = "lowerbound" position: "absolute" top: "8px" right: "16px">
+		</div>
+		<div> Upper bound year:</div>
+		<div class = "upperbound"></div>
+		<!-- Parent container for the visualization -->
+		<div id="chart-area">
+		</div>
+			<h3 id = "title"></h3>
+					<table class = "table">
+						<tbody>
+							<tr>
+								<td>Winner:</td>
+								<td id = "WINNER"></td>
+							</tr>
+							<tr>
+								<td>Goals:</td>
+								<td id = "GOALS"></td>
+							</tr>
+							<tr>
+								<td>Average Goals:</td>
+								<td id = "AVERAGE_GOALS"></td>
+							</tr>
+							<tr>
+								<td>Matches:</td>
+								<td id = "MATCHES"></td>
+							</tr>
+							<tr>
+								<td>Teams:</td>
+								<td id = "TEAMS"></td>
+							</tr>
+							<tr>
+								<td>Average Attendance:</td>
+								<td id = "AVERAGE_ATTENDANCE"></td>
+							</tr>
+						</tbody>
+					</table>
+		
+
+	</div>
+
+
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3.tip.js"></script>
+
+	<!-- Your implementation -->
+	<script src="js/main.js"></script>
+</body>
+</html>
